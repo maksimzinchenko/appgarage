@@ -1,4 +1,5 @@
 Features roadmap
 
-2. Dockerize django project with sqlite for while.
-1. --- Init django progect appgarage | Done
+3. Build docker compose with postgres | dockerizing
+2. --- Dockerize django project with sqlite for while. | Done | dockerizing
+1. --- Init django progect appgarage | Done | venv 1.roadmap
