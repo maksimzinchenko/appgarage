@@ -1,4 +1,4 @@
 Features roadmap
 
-
+2. Dockerize django project with sqlite for while.
 1. --- Init django progect appgarage | Done
