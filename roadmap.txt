@@ -1,5 +1,15 @@
 Features roadmap
 
 3. Build docker compose with postgres | dockerizing
+    added docker-compose for development env
+        build/start docker-compose up -d
+        stop/remove with docker-compose down -v
+    added docker-compose.prod for production env with with gunicorn and nginx
+        build/start docker-compose -f docker-compose.yml up -d --build
+        migrate all db docker-compose -f docker-compose.prod.yml exec web python manage.py migrate --noinput
+        collect all static files for folder docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
+        stop/remove with docker-compose -f docker-compose.yml down -v
+    created django applcaton - web
+
 2. --- Dockerize django project with sqlite for while. | Done | dockerizing
 1. --- Init django progect appgarage | Done | venv 1.roadmap
